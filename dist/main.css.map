@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://fun-weather/./src/sass/main.scss"],"names":[],"mappings":"AAEA;EACE,qBAHS;AAEX,C","file":"main.css","sourcesContent":["$redColor: red;\r\n\r\nbody {\r\n  background-color: $redColor;\r\n}"],"sourceRoot":""}
