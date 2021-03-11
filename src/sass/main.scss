@@ -1,13 +1,12 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@use 'reset';
+@use 'typography';
+@use 'header';
+@use 'home';
+
+.wrapper {
+  max-width: 1167px;
+  margin: 0 auto;
 }
 
-body {
-  background-color: aqua;
-}
 
-.icon-facebook {
-  background-image: url("../images/facebook.png");
-}
+

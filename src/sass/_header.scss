@@ -1,0 +1,10 @@
+@import 'variables';
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: $white;
+}

@@ -1,3 +1,65 @@
-*{box-sizing:border-box;margin:0;padding:0}body{background-color:aqua}.icon-facebook{background-image:url(./images/facebook.png)}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-small {
+  font-size: 16px;
+}
+
+.text-medium {
+  font-size: 18px;
+}
+
+.text-large, .title-small {
+  font-size: 24px;
+}
+
+.title-medium {
+  font-size: 36px;
+}
+
+.title-large {
+  font-size: 60px;
+}
+
+@font-face {
+  font-family: ubuntuLight;
+  src: url(./fonts/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: ubuntuRegular;
+  src: url(./fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: ubuntuBold;
+  src: url(./fonts/Ubuntu-Bold.ttf);
+}
+.font-light {
+  font-family: ubuntuLight, sans-serif;
+}
+
+.font-regular {
+  font-family: ubuntuRegular, sans-serif;
+}
+
+.font-bold {
+  font-family: ubuntuBold, sans-serif;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1167px;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=main.css.map*/

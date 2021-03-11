@@ -1,0 +1,46 @@
+.text-small {
+  font-size: 16px;
+}
+
+.text-medium {
+  font-size: 18px;
+}
+
+.text-large, .title-small {
+  font-size: 24px;
+}
+
+.title-medium {
+  font-size: 36px;
+}
+
+.title-large {
+  font-size: 60px;
+}
+
+@font-face {
+  font-family: ubuntuLight;
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: ubuntuRegular;
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: ubuntuBold;
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+
+.font-light {
+  font-family: ubuntuLight, sans-serif;
+}
+
+.font-regular {
+  font-family: ubuntuRegular, sans-serif;
+}
+
+.font-bold {
+  font-family: ubuntuBold, sans-serif;
+}

@@ -33,8 +33,16 @@ module.exports = {
       },
 
       {
+        test: /\.ttf$/i,
+        loader: "file-loader",
+        options: {
+          name: "./fonts/[name].[ext]"
+        }
+      },
+
+      {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader",]
       }
     ]
   }
