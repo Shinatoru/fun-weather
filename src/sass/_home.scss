@@ -1,0 +1,66 @@
+@import 'variables';
+
+.home {
+  padding-top: 180px;
+  min-height: 850px;
+  height: 95vh;
+  background: url($home-bg) no-repeat 50% 100%;
+
+  .home__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .home__text-block {
+      margin-bottom: 62px;
+
+      .home__title, .home__descr{
+        color: $white;
+      }
+
+      .home__title {
+        margin-bottom: 42px;
+        max-width: 500px;
+        line-height: 1.2em;
+      }
+
+      .home__descr {
+        max-width: 390px;
+        line-height: 1.5em;
+      }
+    }
+
+    .home__btn-block {
+
+      max-width: 330px;
+      display: flex;
+      justify-content: space-between;
+
+      .home__btn {
+        padding: 18px 34px;
+        border: none;
+        border-radius: 5px;
+        max-width: 160px;
+        color: $white;
+        cursor: pointer;
+      }
+
+      .btn-download {
+        background-color: $main-orange;
+      }
+
+      .btn-features {
+        background-color: $main-blue;
+      }
+    }
+
+    .scroll-down {
+      width: 60px;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

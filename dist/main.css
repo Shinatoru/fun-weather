@@ -48,13 +48,110 @@
   font-family: ubuntuBold, sans-serif;
 }
 
-.header__inner {
+.header {
+  position: absolute;
+  top: 34px;
+  width: 100%;
+}
+.header .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__inner .logo {
+  color: #fff;
+}
+.header .header__inner .nav {
+  width: 545px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.header .header__inner .nav .nav__link {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+.header .header__inner .nav .active {
+  color: #fff;
+}
+.header .header__inner .social {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: block;
+  height: 26px;
+  width: 26px;
+  background-size: contain;
+}
+
+.icon-facebook-light {
+  background: url(./images/facebook.png) no-repeat;
+}
+
+.icon-instagram-light {
+  background: url(./images/instagram.png) no-repeat;
+}
+
+.icon-twitter-light {
+  background: url(./images/twitter.png) no-repeat;
+}
+
+.home {
+  padding-top: 180px;
+  min-height: 850px;
+  height: 95vh;
+  background: url(./images/home-bg.png) no-repeat 50% 100%;
+}
+.home .home__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.home .home__inner .home__text-block {
+  margin-bottom: 62px;
+}
+.home .home__inner .home__text-block .home__title, .home .home__inner .home__text-block .home__descr {
+  color: #fff;
+}
+.home .home__inner .home__text-block .home__title {
+  margin-bottom: 42px;
+  max-width: 500px;
+  line-height: 1.2em;
+}
+.home .home__inner .home__text-block .home__descr {
+  max-width: 390px;
+  line-height: 1.5em;
+}
+.home .home__inner .home__btn-block {
+  max-width: 330px;
   display: flex;
   justify-content: space-between;
 }
-
-.logo {
+.home .home__inner .home__btn-block .home__btn {
+  padding: 18px 34px;
+  border: none;
+  border-radius: 5px;
+  max-width: 160px;
   color: #fff;
+  cursor: pointer;
+}
+.home .home__inner .home__btn-block .btn-download {
+  background-color: #fc6a42;
+}
+.home .home__inner .home__btn-block .btn-features {
+  background-color: #4466c9;
+}
+.home .home__inner .scroll-down {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .wrapper {

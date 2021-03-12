@@ -1,10 +1,43 @@
 @import 'variables';
 
-.header__inner {
-  display: flex;
-  justify-content: space-between;
+.header {
+  position: absolute;
+  top: 34px;
+  width: 100%;
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      color: $white;
+    }
+
+    .nav {
+      width: 545px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      .nav__link {
+        color: $nav-link;
+        text-decoration: none;
+      }
+
+      .active {
+        color: $white;
+      }
+    }
+
+    .social {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
-.logo {
-  color: $white;
-}
+
+
