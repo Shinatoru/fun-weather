@@ -1,3 +1,5 @@
+@import 'variables';
+
 .text-small {
   font-size: 16px;
 }
@@ -20,17 +22,17 @@
 
 @font-face {
   font-family: ubuntuLight;
-  src: url("../fonts/Ubuntu-Light.ttf");
+  src: url($ubuntu-light);
 }
 
 @font-face {
   font-family: ubuntuRegular;
-  src: url("../fonts/Ubuntu-Regular.ttf");
+  src: url($ubuntu-regular);
 }
 
 @font-face {
   font-family: ubuntuBold;
-  src: url("../fonts/Ubuntu-Bold.ttf");
+  src: url($ubuntu-bold);
 }
 
 .font-light {
@@ -43,4 +45,19 @@
 
 .font-bold {
   font-family: ubuntuBold, sans-serif;
+}
+
+.heading {
+  @extend .font-bold;
+  @extend .title-medium;
+  color: $heading;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.sub-heading {
+  @extend .font-regular;
+  @extend .text-medium;
+  color: $sub-heading;
+  text-align: center;
 }

@@ -8,7 +8,7 @@
   font-size: 16px;
 }
 
-.text-medium {
+.text-medium, .sub-heading {
   font-size: 18px;
 }
 
@@ -16,7 +16,7 @@
   font-size: 24px;
 }
 
-.title-medium {
+.title-medium, .heading {
   font-size: 36px;
 }
 
@@ -40,12 +40,23 @@
   font-family: ubuntuLight, sans-serif;
 }
 
-.font-regular {
+.font-regular, .sub-heading {
   font-family: ubuntuRegular, sans-serif;
 }
 
-.font-bold {
+.font-bold, .heading {
   font-family: ubuntuBold, sans-serif;
+}
+
+.heading {
+  color: #648cff;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.sub-heading {
+  color: #999999;
+  text-align: center;
 }
 
 .header {
@@ -105,6 +116,7 @@
   min-height: 850px;
   height: 95vh;
   background: url(./images/home-bg.png) no-repeat 50% 100%;
+  margin-bottom: 130px;
 }
 .home .home__inner {
   display: flex;
@@ -152,11 +164,46 @@
   left: 50%;
   top: 100%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.features {
+  margin-bottom: 180px;
+}
+.features .features__inner .features__header {
+  margin-bottom: 130px;
+}
+.features .features__inner .features__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.features .features__inner .features__content .feature__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 370px;
+}
+.features .features__inner .features__content .feature__block .feature__title {
+  margin-bottom: 20px;
+  color: #353854;
+}
+.features .features__inner .features__content .feature__block .feature__desc {
+  max-width: 265px;
+  color: #aeaeae;
+}
+
+.widgets .widgets__inner .widgets__header {
+  margin-bottom: 60px;
 }
 
 .wrapper {
   max-width: 1167px;
   margin: 0 auto;
+}
+
+body {
+  padding-bottom: 300px;
 }
 
 /*# sourceMappingURL=main.css.map*/

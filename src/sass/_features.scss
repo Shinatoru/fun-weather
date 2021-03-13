@@ -1,0 +1,35 @@
+@import 'variables';
+
+.features {
+  margin-bottom: 180px;
+
+  .features__inner {
+  
+    .features__header {
+      margin-bottom: 130px;
+    }
+  
+    .features__content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      
+      .feature__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-width: 370px;
+  
+        .feature__title {
+          margin-bottom: 20px;
+          color: $feature-title;
+        }
+  
+        .feature__desc {
+          max-width: 265px;
+          color: $feature-desc;
+        }
+      }
+    }
+  }
+}

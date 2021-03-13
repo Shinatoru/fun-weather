@@ -1,9 +1,0 @@
-@use 'reset';
-@use 'typography';
-@use 'header';
-@use 'home';
-.wrapper {
-  max-width: 1167px;
-  margin: 0 auto;
-}
-/*# sourceMappingURL=main.css.map */

@@ -3,11 +3,15 @@
 @use 'header';
 @use 'icons';
 @use 'home';
+@use 'features';
+@use 'widgets';
 
 .wrapper {
   max-width: 1167px;
   margin: 0 auto;
 }
-
-
+//Remove later
+body {
+  padding-bottom: 300px;
+}
 
