@@ -1,0 +1,37 @@
+@import 'variables';
+
+.footer {
+  background-color: $feature-title;
+  padding: 100px 0;
+  position: relative;
+
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-red {
+      color: $main-orange;
+    }
+
+    .logo-blue {
+      color: $main-blue;
+    }
+  }
+
+  .footer__divider {
+    margin: 100px auto 50px;
+    color: #434769;
+    max-width: 1590px;
+  }
+
+  .rights {
+    text-align: right;
+    color: #565b87;
+  }
+  
+  .scroll-up {
+    position: absolute;
+    bottom: 0;
+    right: 66px;
+  }
+}

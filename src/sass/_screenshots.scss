@@ -1,0 +1,53 @@
+@import 'variables';
+
+.screenshots {
+
+  .screenshots__inner {
+    .screenshots__header {
+      margin-bottom: 170px;
+    }
+
+    .screenshots__content {
+      
+      .screenshot:not(:last-child) {
+        margin-bottom: 170px;
+      }
+
+      .screenshot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .screenshot__img {
+          max-width: 100%;
+
+          img {
+            width: 450px;
+            height: auto;
+          }
+        }
+
+        .screenshot__info {
+
+          .screenshot__icon {
+            margin-bottom: 50px;
+          }
+
+          .screenshot__text-block {
+            margin-bottom: 50px;
+            max-width: 500px;
+            
+            .screenshot__heading {
+              color: $heading;
+              margin-bottom: 25px;
+            }
+            .screenshot__text {
+              color: $feature-title;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

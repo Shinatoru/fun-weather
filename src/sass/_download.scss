@@ -1,0 +1,42 @@
+@import 'variables';
+
+.download {
+  background-image: url("../images/download-bg.jpg");
+  background-size: cover;
+  background-position-x: -100px;
+  padding: 125px 0;
+
+  .download__inner {
+    max-width: 580px;
+
+    .download__title {
+      color: $white;
+      margin-bottom: 40px;
+    }
+
+    .download__text {
+      color: $white;
+      max-width: 360px;
+      margin-bottom: 25px;
+      line-height: 1.3;
+    }
+
+    .download__buttons {
+      .download__btn {
+        height: 45px;
+        background-size: contain;
+        display: inline-block;
+      }
+
+      .download__ios {
+        background-image: url("../images/appstore.png");
+        width: 147px;
+      }
+
+      .download__android {
+        background-image: url("../images/googleplay.png");
+        width: 139px;
+      }
+    }
+  }
+}

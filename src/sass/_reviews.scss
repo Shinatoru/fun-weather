@@ -1,0 +1,40 @@
+@import 'variables';
+
+.reviews {
+  .reviews__inner {
+    .reviews__header {
+      margin-bottom: 120px;
+    }
+
+    .reviews__content {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      gap: 50px;
+      row-gap: 200px;
+
+      .review {
+        max-width: 550px;
+
+        .review__quotation {
+          color: $heading;
+          font-size: 140px;
+          line-height: 0;
+          margin: -10px -5px;
+        }
+
+        .review__quotation:last-child {
+          transform: rotate(180deg);
+        }
+
+        .review__text {
+          margin-bottom: 10px;
+        }
+
+        .review__text, .review__author {
+          color: $feature-title;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
