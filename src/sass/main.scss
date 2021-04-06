@@ -5,6 +5,11 @@
 @use 'home';
 @use 'features';
 @use 'widgets';
+@use 'true';
+
+body > div:not(:last-child) {
+  margin-bottom: 120px;
+}
 
 .wrapper {
   max-width: 1167px;
