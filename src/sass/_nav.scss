@@ -18,7 +18,9 @@
 
 .burger {
   display: none;
+  height: 28px;
   flex-direction: column;
+  justify-content: space-evenly;
   background: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
@@ -26,7 +28,6 @@
   span {
     width: 30px;
     height: 2px;
-    margin-bottom: 5px;
     background: $white;
     border-radius: 3px;
   }
