@@ -16,9 +16,39 @@
   }
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+
+  span {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background: $white;
+    border-radius: 3px;
+  }
+}
+
 .social {
   width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: $tablet) {
+  .nav {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
 }
