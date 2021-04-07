@@ -2,7 +2,7 @@
 
 .home {
   padding-top: 180px;
-  min-height: 850px;
+  min-height: 900px;
   height: 95vh;
   background: url($home-bg) no-repeat 50% 100%;
 
@@ -29,6 +29,10 @@
         max-width: 390px;
         line-height: 1.5em;
       }
+    }
+
+    .home__phone {
+      width: 100%;
     }
 
     .home__btn-block {
@@ -77,5 +81,17 @@
         transform: rotate(-135deg);
       }
     }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .home {
+    height: 80vh;
+    min-height: 750px;
+    background-size: cover;
+  }
+
+  .scroll-down {
+    transform: translate(0, 50%);
   }
 }
