@@ -33,6 +33,10 @@
 
     .home__phone {
       width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
 
     .home__btn-block {
@@ -89,9 +93,17 @@
     height: 80vh;
     min-height: 750px;
     background-size: cover;
+
+    .home__left {
+      width: 55%;
+    }
+
+    .home__right {
+      width: 45%;
+    }
   }
 
   .scroll-down {
-    transform: translate(0, 50%);
+    transform: translate(0, 150%);
   }
 }
