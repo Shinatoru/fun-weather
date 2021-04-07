@@ -1,5 +1,6 @@
 @use 'reset';
 @use 'typography';
+@use 'side-menu';
 @use 'nav';
 @use 'header';
 @use 'icons';
@@ -16,6 +17,14 @@
 
 body > div:nth-last-child(n+3) {
   margin-bottom: 120px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .wrapper {
