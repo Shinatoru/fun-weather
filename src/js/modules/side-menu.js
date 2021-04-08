@@ -6,19 +6,21 @@ function sideMenu() {
   burger.addEventListener('click', e => {
     fadeArea.classList.add('fade');
     menu.style.width = "300px";
+    document.body.style.overflow = "hidden";
+    
+    window.addEventListener('resize', e => {
+      if (window.innerWidth > 1200) {
+        fadeArea.classList.remove('fade');
+        menu.style.width = "0";
+        document.body.style.overflow = "";
+      }
+    });
 
-    // window.addEventListener('resize', e => {
-    //   if (window.innerWidth > 1200) {
-    //     menu.classList.remove('show');
-    //   } else {
-    //     menu.classList.add('show');
-    //   }
-    // });
-  
     document.addEventListener('keydown', e => {
       if (e.key == "Escape") {
         fadeArea.classList.remove('fade');
         menu.style.width = "0";
+        document.body.style.overflow = "";
       }
     });
   });
