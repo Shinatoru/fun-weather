@@ -6,8 +6,10 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 300px;
+  width: 0;
+  overflow: hidden;
   background-color: $heading;
+  transition: .5s;
 
   .side-menu__links {
     margin-bottom: 20px;
@@ -41,7 +43,7 @@
   background-color: rgba(0, 0, 0, .2);
   opacity: 0;
   visibility: hidden;
-  transition: all 1s;
+  transition: all .5s;
 
   &.fade {
     opacity: 1;

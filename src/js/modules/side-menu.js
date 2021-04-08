@@ -5,6 +5,7 @@ function sideMenu() {
 
   burger.addEventListener('click', e => {
     fadeArea.classList.add('fade');
+    menu.style.width = "300px";
 
     // window.addEventListener('resize', e => {
     //   if (window.innerWidth > 1200) {
@@ -17,6 +18,7 @@ function sideMenu() {
     document.addEventListener('keydown', e => {
       if (e.key == "Escape") {
         fadeArea.classList.remove('fade');
+        menu.style.width = "0";
       }
     });
   });
