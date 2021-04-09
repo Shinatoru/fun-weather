@@ -51,3 +51,26 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .screenshots {
+    .screenshots__inner {
+      .screenshots__content {
+        .screenshot {
+
+          .screenshot__img {
+            width: 40%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .screenshot__info {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+}

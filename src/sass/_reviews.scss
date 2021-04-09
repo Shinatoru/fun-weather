@@ -38,3 +38,21 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .reviews {
+    .reviews__inner {
+
+      .reviews__content {
+        gap: 10px;
+        row-gap: 180px;
+        justify-items: center;
+        
+
+        .review {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

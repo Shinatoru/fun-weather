@@ -33,3 +33,18 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .features {
+    .features__inner {
+      .features__content {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .feature__block:not(:last-child) {
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+}
