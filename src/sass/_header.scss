@@ -15,3 +15,11 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .header {
+    .header__inner {
+      padding: 0 20px;
+    }
+  }
+}

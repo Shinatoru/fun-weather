@@ -48,3 +48,28 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .features {
+    .features__inner {
+
+      .features__header {
+        margin-bottom: 100px;
+      }
+
+      .features__content {
+        flex-direction: column;
+        align-items: center;
+
+        .feature__block {
+          min-width: none;
+          max-width: 370px;
+        }
+
+        .feature__block:not(:last-child) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}

@@ -51,3 +51,9 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .footer {
+    padding: 100px 20px;
+  }
+}

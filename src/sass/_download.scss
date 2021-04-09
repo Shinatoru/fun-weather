@@ -40,3 +40,9 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .download {
+    padding: 125px 20px;
+  }
+}

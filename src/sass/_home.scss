@@ -107,3 +107,31 @@
     transform: translate(0, 150%);
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .home {
+    .home__inner {
+      .home__left {
+        width: 100%;
+        width: 400px;
+        margin: 0 auto;
+
+        .home__text-block {
+          width: 100%;
+        }
+
+        .home__btn-block {
+          max-width: 350px;
+        }
+      }
+
+      .home__right {
+        display: none;
+      }
+
+      .scroll-down {
+        left: 45%;
+      }
+    }
+  }
+}
