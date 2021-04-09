@@ -38,3 +38,13 @@ body > div:nth-last-child(n+3) {
     max-width: 650px;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .wrapper {
+    max-width: 600px;
+  }
+
+  .wrapper-small {
+    max-width: 400px;
+  }
+}
